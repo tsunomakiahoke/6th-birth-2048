@@ -46,7 +46,7 @@ HTMLActuator.prototype.clearContainer = function (container) {
   }
 };
 
-HTMLActuator.prototype.addTile = function (tile) {
+HTMLActuator.prototype.addTile = function (tile, eol = false) {
   var self = this;
 
   var wrapper   = document.createElement("div");
@@ -57,12 +57,17 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
+  if (eol) {
+    classes.push("tile-eol");
+  }
+
   if (tile.value > 2048) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  // dont display value, use background image instead
+  //inner.textContent = tile.value;
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -76,7 +81,7 @@ HTMLActuator.prototype.addTile = function (tile) {
 
     // Render the tiles that merged
     tile.mergedFrom.forEach(function (merged) {
-      self.addTile(merged);
+      self.addTile(merged, true);
     });
   } else {
     classes.push("tile-new");
