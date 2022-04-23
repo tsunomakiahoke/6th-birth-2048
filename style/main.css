@@ -179,6 +179,39 @@ hr {
     opacity: 0;
   }
 }
+@-webkit-keyframes boom {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@-moz-keyframes boom {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes boom {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
 .game-container {
   margin-top: 40px;
   position: relative;
@@ -208,9 +241,9 @@ hr {
   background: rgba(238, 228, 218, 0.5);
   z-index: 100;
   text-align: center;
-  -webkit-animation: fade-in 800ms ease 1200ms;
-  -moz-animation: fade-in 800ms ease 1200ms;
-  animation: fade-in 800ms ease 1200ms;
+  -webkit-animation: fade-in 800ms ease 600ms;
+  -moz-animation: fade-in 800ms ease 600ms;
+  animation: fade-in 800ms ease 600ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -686,6 +719,31 @@ hr {
   left: 0;
   top: 0;
   display: none;
+}
+
+.barbecue {
+  display: none;
+}
+.barbecue img {
+  width: 0;
+}
+
+.game-over .barbecue {
+  display: block;
+}
+.game-over .barbecue img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: boom 3s linear 600ms;
+  -moz-animation: boom 3s linear 600ms;
+  animation: boom 3s linear 600ms;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
 /*# sourceMappingURL=main.css.map */
