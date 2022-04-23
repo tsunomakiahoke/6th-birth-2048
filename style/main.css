@@ -269,6 +269,7 @@ hr {
   height: 40px;
   line-height: 42px;
   margin-left: 9px;
+  display: none;
 }
 .game-container .game-message a.keep-playing-button {
   display: none;
@@ -698,12 +699,24 @@ hr {
   text-align: center;
   float: right;
   background: none;
-  margin-top: 40px;
+  margin-top: 55px;
   margin-right: 38px;
   width: 196px;
   height: 82px;
 }
 
+.restart-button:hover {
+  background: url("img/respawn_button.png");
+  background-size: contain;
+  animation: pulse 1s infinite;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #ef8f6e;
+  }
+}
 .game-explanation {
   margin-top: 50px;
 }
