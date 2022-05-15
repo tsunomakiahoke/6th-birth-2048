@@ -213,7 +213,7 @@ hr {
   }
 }
 .game-container {
-  margin-top: 40px;
+  margin-top: 23px;
   position: relative;
   padding: 40px 60px;
   cursor: default;
@@ -699,15 +699,15 @@ hr {
   text-align: center;
   float: right;
   background: none;
-  margin-top: 55px;
-  margin-right: 38px;
-  width: 196px;
-  height: 82px;
+  margin-top: 61px;
+  margin-right: 42px;
+  width: 210px;
+  height: 100px;
 }
 
 .restart-button:hover {
   background: url("img/respawn_button.png");
-  background-size: contain;
+  background-size: cover;
   animation: pulse 1s infinite;
   box-shadow: 0 0 0 2em transparent;
 }
@@ -723,15 +723,58 @@ hr {
 
 .container .birthday {
   height: 100%;
-  width: 100%;
-  background: url("img/red and white rays.gif") center;
-  background-size: auto 100%;
-  opacity: 0.5;
+  width: 640px;
   z-index: 999;
   position: absolute;
-  left: 0;
-  top: 0;
   display: none;
+}
+
+.birthday-bg {
+  height: 100%;
+  width: 100%;
+  background: url("img/redwhite.gif") no-repeat center;
+  background-size: auto 100%;
+  opacity: 0.5;
+  position: absolute;
+}
+
+#fin1, #fin2, #fin3, #fin4, #fin5, #fin6 {
+  position: absolute;
+  width: 25%;
+  height: auto;
+}
+
+#fin1 {
+  width: 100%;
+  height: auto;
+  margin-top: 150px;
+}
+
+#fin2 {
+  left: 50px;
+  top: 170px;
+  transform: scaleX(-1);
+}
+
+#fin3 {
+  left: 470px;
+  top: 730px;
+}
+
+#fin4 {
+  left: 50px;
+  top: 730px;
+  transform: scaleX(-1);
+}
+
+#fin5 {
+  left: 470px;
+  top: 170px;
+}
+
+#fin6 {
+  left: 256px;
+  top: 100px;
 }
 
 .barbecue {
