@@ -808,9 +808,9 @@ hr {
   width: 100%;
   height: auto;
   margin-top: 150px;
-  -webkit-animation: fade-in 6s ease 2s;
-  -moz-animation: fade-in 6s ease 2s;
-  animation: fade-in 6s ease 2s;
+  -webkit-animation: fade-in 5s ease 2s;
+  -moz-animation: fade-in 5s ease 2s;
+  animation: fade-in 5s ease 2s;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
@@ -879,9 +879,9 @@ hr {
   height: auto;
   left: 0px;
   top: 15px;
-  -webkit-animation: pop 1000ms ease 8s;
-  -moz-animation: pop 1000ms ease 8s;
-  animation: pop 1000ms ease 8s;
+  -webkit-animation: pop 1000ms ease 7s;
+  -moz-animation: pop 1000ms ease 7s;
+  animation: pop 1000ms ease 7s;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards;

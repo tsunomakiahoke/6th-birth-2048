@@ -650,7 +650,7 @@ hr {
   width: 100%;
   height: auto;
   margin-top: 150px;
-  @include animation(fade-in 6s ease 2s);
+  @include animation(fade-in 5s ease 2s);
   @include animation-fill-mode(backwards);
 }
 
@@ -697,7 +697,7 @@ hr {
   height: auto;
   left: 0px;
   top: 15px;
-  @include animation(pop 1000ms ease 8s);
+  @include animation(pop 1000ms ease 7s);
   @include animation-fill-mode(backwards);
 }
 
