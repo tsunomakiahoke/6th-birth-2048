@@ -655,6 +655,66 @@ hr {
     transform: scale(1);
   }
 }
+@-webkit-keyframes rpop {
+  0% {
+    -webkit-transform: scale(0) scaleX(-1);
+    -moz-transform: scale(0) scaleX(-1);
+    -ms-transform: scale(0) scaleX(-1);
+    transform: scale(0) scaleX(-1);
+  }
+  50% {
+    -webkit-transform: scale(1.2) scaleX(-1);
+    -moz-transform: scale(1.2) scaleX(-1);
+    -ms-transform: scale(1.2) scaleX(-1);
+    transform: scale(1.2) scaleX(-1);
+  }
+  100% {
+    -webkit-transform: scale(1) scaleX(-1);
+    -moz-transform: scale(1) scaleX(-1);
+    -ms-transform: scale(1) scaleX(-1);
+    transform: scale(1) scaleX(-1);
+  }
+}
+@-moz-keyframes rpop {
+  0% {
+    -webkit-transform: scale(0) scaleX(-1);
+    -moz-transform: scale(0) scaleX(-1);
+    -ms-transform: scale(0) scaleX(-1);
+    transform: scale(0) scaleX(-1);
+  }
+  50% {
+    -webkit-transform: scale(1.2) scaleX(-1);
+    -moz-transform: scale(1.2) scaleX(-1);
+    -ms-transform: scale(1.2) scaleX(-1);
+    transform: scale(1.2) scaleX(-1);
+  }
+  100% {
+    -webkit-transform: scale(1) scaleX(-1);
+    -moz-transform: scale(1) scaleX(-1);
+    -ms-transform: scale(1) scaleX(-1);
+    transform: scale(1) scaleX(-1);
+  }
+}
+@keyframes rpop {
+  0% {
+    -webkit-transform: scale(0) scaleX(-1);
+    -moz-transform: scale(0) scaleX(-1);
+    -ms-transform: scale(0) scaleX(-1);
+    transform: scale(0) scaleX(-1);
+  }
+  50% {
+    -webkit-transform: scale(1.2) scaleX(-1);
+    -moz-transform: scale(1.2) scaleX(-1);
+    -ms-transform: scale(1.2) scaleX(-1);
+    transform: scale(1.2) scaleX(-1);
+  }
+  100% {
+    -webkit-transform: scale(1) scaleX(-1);
+    -moz-transform: scale(1) scaleX(-1);
+    -ms-transform: scale(1) scaleX(-1);
+    transform: scale(1) scaleX(-1);
+  }
+}
 .tile-merged .tile-inner {
   z-index: 20;
   -webkit-animation: pop 200ms ease 100ms;
@@ -748,33 +808,83 @@ hr {
   width: 100%;
   height: auto;
   margin-top: 150px;
+  -webkit-animation: fade-in 6s ease 2s;
+  -moz-animation: fade-in 6s ease 2s;
+  animation: fade-in 6s ease 2s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 #fin2 {
   left: 50px;
   top: 170px;
   transform: scaleX(-1);
+  -webkit-animation: rpop 500ms ease 600ms;
+  -moz-animation: rpop 500ms ease 600ms;
+  animation: rpop 500ms ease 600ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 #fin3 {
   left: 470px;
   top: 730px;
+  -webkit-animation: pop 500ms ease 800ms;
+  -moz-animation: pop 500ms ease 800ms;
+  animation: pop 500ms ease 800ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 #fin4 {
   left: 50px;
   top: 730px;
   transform: scaleX(-1);
+  -webkit-animation: rpop 500ms ease 1000ms;
+  -moz-animation: rpop 500ms ease 1000ms;
+  animation: rpop 500ms ease 1000ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 #fin5 {
   left: 470px;
   top: 170px;
+  -webkit-animation: pop 500ms ease 1200ms;
+  -moz-animation: pop 500ms ease 1200ms;
+  animation: pop 500ms ease 1200ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 #fin6 {
   left: 256px;
   top: 100px;
+  -webkit-animation: pop 500ms ease 1400ms;
+  -moz-animation: pop 500ms ease 1400ms;
+  animation: pop 500ms ease 1400ms;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+#rgb {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 15px;
+  -webkit-animation: pop 1000ms ease 8s;
+  -moz-animation: pop 1000ms ease 8s;
+  animation: pop 1000ms ease 8s;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 .barbecue {
